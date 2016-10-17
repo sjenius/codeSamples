@@ -1,0 +1,182 @@
+/*Layout specific - hand coded*/
+
+.menu-title a{
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 1vh;
+}
+
+section{
+	padding: 6vh 0 5vh 0;
+}
+
+.participants{
+   margin: 10vh auto 0 auto;
+}
+
+#mainNav{
+  text-align: center;
+}
+#mainNav a:hover{
+    opacity: 0.7;
+}
+
+#mainNav li{
+	display: inline-block;
+	list-style: none;
+	text-decoration: none;
+}
+
+#mainNav li::before{
+  border: none;
+}
+
+#mainNav li a{
+	 padding: 0 10px;
+}
+#mainNav li a::last-child{
+	padding-right: 0;
+}
+
+#home, #media, #break, #resources{
+	background: url('../img/homeBackground.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	z-index: 2;
+}
+
+.flex-video{
+    margin-top: 135px;
+}
+
+.poster-img{
+	max-width: 60%;
+}
+
+.synopsis{
+    background: rgba(255,255,255,0.8);
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+#media{
+	background: url('../img/gasMask.jpg');
+	color: #FFF;
+}
+
+#media a{
+  color: #f28900;
+}
+
+#break{
+	background: url('../img/chemicalPool.jpg');
+	z-index: 2;
+	min-height: 200px;
+}
+
+#screenings, #connect{
+  text-align: center;
+}
+
+#resources{
+	background: url('../img/smokeStack2.jpg');
+}
+
+#connect h3{
+	  display: inline-block;
+	  font-size: 40px;
+	  background: #f28900;
+	  width: 6%;
+	  height: 8%;
+	  margin-right: 5%;
+	  text-align: center;
+}
+
+#connect a{
+	text-decoration: none;
+}
+
+#connect .hidden2{
+	text-indent: -999999px;
+	display: inline-block;
+}
+
+.sticky{
+	background: #222;
+}
+
+.hidden{
+  display: none;
+}
+
+/*put together using SASS*/
+@media only screen and (max-width: 480px) {
+	#header{
+		height:auto;}
+	#header .logoMain {
+	    margin: 0 auto;
+	    float: none; 
+    }
+    #header .callNow {
+	    clear: both;
+		margin: 0 auto;
+		float: none;
+		max-width: 100%;
+		width: 100%; 
+	}
+
+	/*Home page*/
+	.featuredArea {
+		width: 50%;
+		overflow: auto;
+		background-size: 100%;
+		background-position: 0px -20px; 
+	}
+	.featuredArea section {
+		margin: 1% auto;
+	 }
+	.featuredArea h2 {
+		margin-top: 100px;
+		padding: 5px;
+		height: 10%;
+		max-height: 40px;
+		font-size: 1.25em;
+		margin-bottom: 0; 
+	}
+	
+	/*Mobile Form Stuff*/
+	.formArea #three {
+		display: none;
+	 }
+	form {
+		width: 100%;
+		text-align: center;
+	 }
+	form input {
+		float: none;
+		width: 81.555556%; 
+	}
+	form input[type="submit"], aside form input[type="submit"]{
+		width: 27.941176%;
+	}
+	
+	/*Footer*/
+	#menuBottom {
+		display: none; 
+	}
+	#locationInfo .section {
+		padding-bottom: 58.083333%; 
+	}
+	#footerFullWrap .section a {
+		clear: both;
+		width: 50%;
+		margin: 0 auto;
+		float: none; 
+	} 
+ 
+ }/*End 480px media query*/
